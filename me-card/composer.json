@@ -1,0 +1,21 @@
+{
+    "name": "badtudou/me-card",
+    "description": "MeCard is a data file similar to vCard but used by NTT DoCoMo in Japan in QR code format for use with Cellular Phones.",
+    "type": "library",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "BadTudou",
+            "email": "badtudou@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload" : {
+        "psr-4" : {
+            "BadTudou\\MeCard\\" : "lib/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.5"
+    }
+}
