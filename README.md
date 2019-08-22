@@ -20,18 +20,19 @@ public function testReader()
       $mecard->get();
     */
     
-	/*
-  [
-     "N" => "Mike",
-     "TEL" => "123 4567 8901",
-   ]
-   */
+    /*
+    [
+      "N" => "Mike",
+      "TEL" => "123 4567 8901",
+    ]
+    */
 }
 
 public function testSerialize()
 {
    $data = 'MECARD:N:Mike;TEL:123 4567 8901;;';
    $mecard = new BadTudou\MeCard\MeCard($data);
+   
    $mecard->serialize();
    /*
    "MECARD:N:Mike;TEL:123 4567 8901;;"
